@@ -1,0 +1,17 @@
+# Core API framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# Data science and ML
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+
+# API utilities
+python-multipart==0.0.6
+requests==2.31.0
+
+# Development and testing
+pytest==7.4.0
+pytest-asyncio==0.21.1
