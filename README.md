@@ -1,10 +1,5 @@
 # Health AI Security Platform
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/Tests-100%25-brightgreen.svg)](test_api.py)
-
 A security testing platform for healthcare AI models, focusing on privacy attacks, federated learning vulnerabilities, and compliance assessment.
 
 Built to analyze the security of genomic AI models in healthcare environments, with support for differential privacy and multi-institutional federated learning scenarios.
