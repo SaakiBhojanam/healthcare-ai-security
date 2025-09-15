@@ -47,31 +47,6 @@ The API documentation is available at [http://localhost:8000/docs](http://localh
 - **Attack Success Metrics** - Realistic success rates for different attack types
 - **Mitigation Recommendations** - Actionable suggestions for improving security
 
----
-
-## Project Structure
-
-```
-health-ai-security/
-├── README.md                   # This file
-├── test_api.py                 # Test suite
-├── setup.py                    # Installation script
-├── requirements.txt            # Python dependencies
-├── LICENSE                     # MIT License
-└── backend/                    # API implementation
-    ├── simple_main.py          # FastAPI server
-    ├── requirements.txt        # Backend dependencies
-    └── core/
-        └── ai_security_engine.py # Security analysis engine
-```
-
-## Technology Stack
-
-- **FastAPI** - Modern API framework with automatic documentation
-- **scikit-learn** - Machine learning algorithms for model training and attacks
-- **NumPy** - Numerical computing for data manipulation
-- **Pydantic** - Data validation and serialization
-
 ## Testing
 
 The project includes a comprehensive test suite that validates all API endpoints:
