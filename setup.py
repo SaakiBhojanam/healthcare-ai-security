@@ -11,7 +11,7 @@ import time
 
 def run_command(command, description):
     """Run a shell command with error handling"""
-    print(f"🔧 {description}...")
+    print(f"{description}...")
     try:
         result = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
         print(f"{description} completed successfully")
