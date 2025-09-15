@@ -1,6 +1,6 @@
 # Security for Health AI Platform - API Guide
 
-## 🚀 Overview
+## Overview
 
 Professional-grade API for genomic AI security testing and privacy analysis. Built for healthcare AI security researchers, compliance teams, and privacy engineers.
 
@@ -8,7 +8,7 @@ Professional-grade API for genomic AI security testing and privacy analysis. Bui
 **Interactive Docs**: `http://localhost:8000/docs`
 **OpenAPI Spec**: `http://localhost:8000/openapi.json`
 
-## 🎯 Core Capabilities
+## Core Capabilities
 
 ### **1. AI Model Security Testing**
 - **Membership Inference Attacks**: Detect training data membership
@@ -29,7 +29,7 @@ Professional-grade API for genomic AI security testing and privacy analysis. Bui
 
 ---
 
-## 📋 API Endpoints
+## API Endpoints
 
 ### **AI Model Management**
 
@@ -237,7 +237,7 @@ GET /ai/security-dashboard
 
 ---
 
-## 🔧 Usage Examples
+## Usage Examples
 
 ### **1. Healthcare Research Scenario**
 ```bash
@@ -288,7 +288,7 @@ curl -X POST http://localhost:8000/ai/federated/security-analysis \
 
 ---
 
-## 🛡️ Security Features
+## Security Features
 
 ### **Input Validation**
 - Pydantic models with field validation
@@ -310,7 +310,7 @@ curl -X POST http://localhost:8000/ai/federated/security-analysis \
 
 ---
 
-## 📊 Response Format
+## Response Format
 
 All endpoints return standardized responses:
 
@@ -330,7 +330,7 @@ All endpoints return standardized responses:
 
 ---
 
-## 🔗 Interactive Documentation
+## Interactive Documentation
 
 Visit `http://localhost:8000/docs` for:
 - Complete API specification
@@ -338,7 +338,7 @@ Visit `http://localhost:8000/docs` for:
 - Request/response schemas
 - Authentication details
 
-## 🎯 Perfect for Security Portfolios
+## Perfect for Security Portfolios
 
 This API demonstrates:
 - **Healthcare AI Security Expertise**: Real-world attack vectors and defenses
