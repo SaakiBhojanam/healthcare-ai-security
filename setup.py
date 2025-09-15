@@ -14,24 +14,24 @@ def run_command(command, description):
     print(f"🔧 {description}...")
     try:
         result = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
-        print(f"✅ {description} completed successfully")
+        print(f"{description} completed successfully")
         return True
     except subprocess.CalledProcessError as e:
-        print(f"❌ {description} failed: {e.stderr}")
+        print(f"{description} failed: {e.stderr}")
         return False
 
 def check_python_version():
     """Verify Python 3.8+ is installed"""
     version = sys.version_info
     if version.major == 3 and version.minor >= 8:
-        print(f"✅ Python {version.major}.{version.minor}.{version.micro} is compatible")
+        print(f"Python {version.major}.{version.minor}.{version.micro} is compatible")
         return True
     else:
-        print(f"❌ Python 3.8+ required, found {version.major}.{version.minor}.{version.micro}")
+        print(f"Python 3.8+ required, found {version.major}.{version.minor}.{version.micro}")
         return False
 
 def main():
-    print("🚀 Security for Health AI Platform - Setup Script")
+    print("Security for Health AI Platform - Setup Script")
     print("=" * 60)
 
     # Check Python version
@@ -46,11 +46,11 @@ def main():
 
     for command, description in setup_steps:
         if not run_command(command, description):
-            print("❌ Setup failed. Please check the error messages above.")
+            print("Setup failed. Please check the error messages above.")
             sys.exit(1)
 
-    print("\n🎯 Setup completed successfully!")
-    print("\n📋 Next Steps:")
+    print("\nSetup completed successfully!")
+    print("\nNext Steps:")
     print("1. Start the API server:")
     print("   cd backend && python3 simple_main.py")
     print("\n2. Run tests:")
@@ -59,12 +59,12 @@ def main():
     print("   http://localhost:8000/docs")
 
     # Ask if user wants to start the server
-    response = input("\n🚀 Start the API server now? (y/n): ").strip().lower()
+    response = input("\n Start the API server now? (y/n): ").strip().lower()
     if response in ['y', 'yes']:
         os.chdir('backend')
-        print("\n🌟 Starting Security for Health AI Platform API...")
-        print("📖 API Documentation: http://localhost:8000/docs")
-        print("🏥 Security Dashboard: http://localhost:8000/ai/security-dashboard")
+        print("\nStarting Security for Health AI Platform API...")
+        print("API Documentation: http://localhost:8000/docs")
+        print("Security Dashboard: http://localhost:8000/ai/security-dashboard")
         print("\nPress Ctrl+C to stop the server\n")
         subprocess.run(["python3", "simple_main.py"])
 
